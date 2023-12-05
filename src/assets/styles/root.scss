@@ -1,0 +1,12 @@
+@import "@/assets/styles/_variables.scss";
+@import "bootstrap/scss/bootstrap.scss";
+
+// Update global classes here
+@font-face {
+  font-family: Poppins;
+  src: url("@/assets/styles/fonts/Poppins-Regular.ttf") format("opentype");
+}
+
+body {
+  font-family: Poppins, sans-serif !important;
+}
