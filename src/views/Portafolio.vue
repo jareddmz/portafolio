@@ -105,6 +105,22 @@
           </div>
         </div>
       </div>
+
+      <div class="col-12 col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="@/assets/images/portafolio/bot_suspe.jpg" class="card-img-top"/>
+          <div class="card-body">
+            <h5 class="fw-bold text-primary">Bot Whatsapp con API ExpressJS</h5>
+            <p>El bot es capaz de generar, actualizar y cancelar citas médicas a través de Whatsapp, puede generar accesos QR y enbeberlos en una imágen PNG que es pasada a través de Whatsapp.</p>
+            <ul>
+              <li>QR de acceso.</li>
+              <li>Generación de imágenes.</li>
+              <li>Conexión múltiples bases de datos.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </template>
