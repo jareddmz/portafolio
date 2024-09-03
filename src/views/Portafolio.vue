@@ -121,6 +121,26 @@
         </div>
       </div>
 
+      <div class="col-12 col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="@/assets/images/portafolio/contratos.png" class="card-img-top"/>
+          <div class="card-body">
+            <h5 class="fw-bold text-primary">Seguimiento y control de contratación pública</h5>
+            <p>Administración de la contratación pública.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="@/assets/images/portafolio/compro_app.png" class="card-img-top"/>
+          <div class="card-body">
+            <h5 class="fw-bold text-primary">App COMPRO NL</h5>
+            <p>Aplicación móvil informativa.</p>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </template>

@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-12 text-center">
         <h1 class="h2 text-primary mt-4">Sobre mi</h1>
-        <p>Hola, mi nombre es Jared Dmz, soy un desarrollador Web y mobil, FullStack, mi stack preferido es Laravel, VueJS, MariaDB, Meilisearch, MinIO, IONIC, a lo largo de los años e desarrollado decenas de proyectos de todo tipo, cada uno con características diferenciales propias de su funcionalidad, desde el sector privado, independiente y público (gobiernos), e participado en nuevos proyectos, migraciones, mantenimiento y nuevos módulos.</p>
+        <p>Líder y desarrollador de software, e trabajado grandes proyectos a cortos plazos en equipo grandes y pequeños, me gusta aprender e investigar acerca de la protección de datos y buenas practicas de programación en los lenguajes que me encuentre trabajando, realizando trabajos profesionales, seguros y fáciles de usar, tanto en el ámbito privado como en el público (gobiernos), e desarrollado, migrado y desplegado decenas de proyectos de toda índole, e asesorado a empresas para la adquisición y adopción de equipos y tecnologías de acuerdo a la necesidad.</p>
         <p>Mi pasión es el código, las motos, los autos y la naturaleza en mi tiempo libre, puedes echarle un vistazo a mi <a href="https://www.youtube.com/@reptalrider/videos" target="_blank">motovlog</a>.</p>
         <p>Te invito a que le des un vistazo a algunos de los proyectos que te puedo mostrar.</p>
         <router-link to="/portafolio" class="btn btn-primary">
@@ -86,6 +86,13 @@
           </div>
           <div class="col-6 d-flex justify-content-center">
             <img src="@/assets/images/logos/deploy/hostinger.png" class="img-fluid rounded shadow p-2 mb-4"/>
+          </div>
+        </div>
+
+        <h3 class="text-primary my-5">Certificaciones digitales</h3>
+        <div class="row">
+          <div class="col-6 d-flex justify-content-center">
+            <img src="@/assets/images/cursos/certification_introduction-to-cybersecurity.png" class="img-fluid rounded shadow p-2 mb-4"/>
           </div>
         </div>
       </div>
