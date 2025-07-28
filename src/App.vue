@@ -1,5 +1,5 @@
 <template>
-  <Navbar/>
+  <!-- <Navbar/> -->
 
   <div class="positive-margin">
     <router-view></router-view>
