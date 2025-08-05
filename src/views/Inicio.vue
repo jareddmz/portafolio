@@ -103,16 +103,23 @@
 
         <h3 class="text-primary my-5">Certificaciones digitales</h3>
         <div class="row justify-content-center">
-          <div class="col-md-2 col-6 d-flex justify-content-center">
+          <div class="col-md-4 col-6 d-flex justify-content-center">
             <a href="https://www.credly.com/badges/a08a681d-9457-4181-b893-70980a2211fe/public_url" target="_blank">
               <img src="@/assets/images/cursos/certification_introduction-to-cybersecurity.png" class="img-fluid rounded shadow p-2 mb-4"/>
             </a>
           </div>
-          <div class="col-md-2 col-6 d-flex justify-content-center">
+          <div class="col-md-4 col-6 d-flex justify-content-center">
+            <a href="https://www.credential.net/792ee0c4-f716-4adc-90e4-16a3941cace6" target="_blank">
+              <img src="@/assets/images/cursos/badge-llama-centro.png" class="img-fluid rounded shadow p-2 mb-4"/>
+            </a>
+          </div>
+          <div class="col-md-4 col-6 d-flex justify-content-center">
             <a href="https://www.credly.com/badges/00452de6-3a29-4abd-ac97-c44fe6dade47/public_url" target="_blank">
               <img src="@/assets/images/cursos/google-cloud-computing-foundations-certificate.png" class="img-fluid rounded shadow p-2 mb-4"/>
             </a>
           </div>
+        </div>
+        <div class="row justify-content-center">
           <div class="col-md-2 col-6 d-flex justify-content-center">
             <a href="https://www.credly.com/badges/e7da7d20-1f98-49c0-907d-578469f705af/public_url" target="_blank">
               <img src="@/assets/images/cursos/set-up-an-app-dev-environment-on-google-cloud-skill.png" class="img-fluid rounded shadow p-2 mb-4"/>
