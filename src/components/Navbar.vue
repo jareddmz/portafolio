@@ -1,46 +1,60 @@
 <template>
-  <nav class="navbar bg-body-tertiary fixed-top">
-    <div class="container-fluid">
-      <a data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" style="cursor: pointer;">
-        <img src="@/assets/images/logo.png" class="img-fluid rounded-circle"/>
-      </a>
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+  <nav class="navbar navbar-expand-lg fixed-top tech-navbar">
+    <div class="container">
+      <!-- Logo/Brand -->
+      <router-link class="navbar-brand tech-brand" to="/">
+        <div class="brand-container">
+          <img src="@/assets/images/logo.png" class="logo-img" alt="Logo"/>
+          <div class="brand-text">
+            <span class="gradient-text fw-bold">Portafolio</span>
+          </div>
+        </div>
+      </router-link>
+      
+      <!-- Toggler para móvil -->
+      <button 
+        class="navbar-toggler tech-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false" 
+        aria-label="Toggle navigation"
+      >
+        <span class="toggler-icon">
+          <i class="bi bi-list"></i>
+        </span>
       </button>
 
-      <div class="offcanvas offcanvas-end w-auto" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header pb-0">
-          <router-link to="/">
-            <img src="@/assets/images/logo.png" class="img-fluid rounded-circle"/>
-          </router-link>
-          <h5 class="offcanvas-title mx-5" id="offcanvasNavbarLabel">Menú</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-
-        <hr>
-
-        <div class="offcanvas-body pt-0">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <router-link to="/" exact-active-class="active" class="nav-link">
-                <i class="bi bi-house"></i> Inicio
-              </router-link>
-            </li>
-            <li class="nav-item">
-              <router-link to="/portafolio" exact-active-class="active" class="nav-link">
-                <i class="bi bi-briefcase"></i> Portafolio
-              </router-link>
-            </li>
-          </ul>
+      <!-- Collapse Menu -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <router-link class="nav-link tech-nav-link" to="/" exact-active-class="active">
+              <i class="bi bi-house me-2"></i>Inicio
+            </router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link tech-nav-link" to="/portafolio" exact-active-class="active">
+              <i class="bi bi-briefcase me-2"></i>Portafolio
+            </router-link>
+          </li>
+        </ul>
+        
+        <!-- Social Links -->
+        <div class="social-links-container d-flex gap-2 ms-3">
+          <a href="https://www.youtube.com/@reptalrider/videos" target="_blank" class="tech-social-link" title="YouTube">
+            <i class="bi bi-youtube"></i>
+          </a>
+          <a href="https://github.com/jareddmz" target="_blank" class="tech-social-link" title="GitHub">
+            <i class="bi bi-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/jareddmz/" target="_blank" class="tech-social-link" title="LinkedIn">
+            <i class="bi bi-linkedin"></i>
+          </a>
         </div>
       </div>
     </div>
   </nav>
 </template>
 
-<style scoped lang="scss">
-.img-fluid {
-  max-width: 40px;
-}
-</style>
