@@ -20,6 +20,25 @@
     <section class="portfolio-section">
       <div class="container">
         <div class="row g-4">
+
+           <!-- Synkro -->
+          <div class="col-12 col-lg-4 col-md-6">
+            <div class="portfolio-card h-100">
+              <img src="@/assets/images/portafolio/synkro.png" class="card-img-top" alt="Synkro"/>
+              <div class="card-body d-flex flex-column p-3">
+                <h5 class="fw-bold mb-3">Synkro</h5>
+                <p class="flex-grow-1">Plataforma SaaS (multicliente, multitenant) de gestión de pozos y reportes especializados de estado con gestión independiente de base de datos.</p>
+                <div class="mt-auto">
+                  <div class="features-list">
+                    <span class="badge bg-primary me-1 mb-1">SaaS</span>
+                    <span class="badge bg-primary me-1 mb-1">Reportes</span>
+                    <span class="badge bg-primary me-1 mb-1">Ingeniería</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <!-- Alivianate -->
           <div class="col-12 col-lg-4 col-md-6">
             <div class="portfolio-card h-100">
