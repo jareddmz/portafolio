@@ -90,17 +90,106 @@
                 </p>
               </div>
               
-              <div class="about-card glass-effect-dark p-4 mb-4">
-                <div class="d-flex align-items-center mb-3">
-                  <div class="about-icon me-3">
-                    <i class="bi bi-shield-check"></i>
+              <!-- Security Block -->
+              <div class="security-block mb-4">
+                <div class="security-block-header glass-effect-dark p-4">
+                  <div class="d-flex align-items-center mb-2">
+                    <div class="about-icon me-3">
+                      <i class="bi bi-shield-check"></i>
+                    </div>
+                    <div>
+                      <h5 class="mb-0 text-white">Seguridad &amp; Desarrollo de Calidad</h5>
+                      <small class="text-white-50">Código seguro desde el primer commit hasta producción</small>
+                    </div>
                   </div>
-                  <h5 class="mb-0 text-white">Seguridad & Mejores Prácticas</h5>
                 </div>
-                <p class="text-white-50 mb-0">
-                  Me especializo en protección de datos y buenas prácticas de programación, 
-                  implementando arquitecturas seguras tanto para el sector privado como público.
-                </p>
+
+                <!-- CIA Triangle -->
+                <div class="cia-triangle glass-effect-dark p-4 mt-2">
+                  <p class="text-white-50 text-center mb-3" style="font-size:0.85rem; letter-spacing:0.05em; text-transform:uppercase;">
+                    Triángulo de la Seguridad
+                  </p>
+                  <div class="cia-pillars">
+                    <div class="cia-pillar">
+                      <div class="cia-icon">
+                        <i class="bi bi-lock-fill"></i>
+                      </div>
+                      <span class="cia-label">Confidencialidad</span>
+                      <span class="cia-desc">Acceso solo a quien corresponde</span>
+                    </div>
+                    <div class="cia-pillar cia-pillar--center">
+                      <div class="cia-icon cia-icon--accent">
+                        <i class="bi bi-patch-check-fill"></i>
+                      </div>
+                      <span class="cia-label">Integridad</span>
+                      <span class="cia-desc">Datos íntegros y no alterados</span>
+                    </div>
+                    <div class="cia-pillar">
+                      <div class="cia-icon">
+                        <i class="bi bi-activity"></i>
+                      </div>
+                      <span class="cia-label">Disponibilidad</span>
+                      <span class="cia-desc">Sistemas siempre operativos</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Two columns: Dev practices + Standards -->
+                <div class="security-columns mt-2">
+                  <div class="security-col glass-effect-dark p-4">
+                    <h6 class="security-col-title mb-3">
+                      <i class="bi bi-code-square me-2"></i>Buenas Prácticas de Desarrollo
+                    </h6>
+                    <div class="security-item">
+                      <div class="security-item-icon"><i class="bi bi-diagram-3"></i></div>
+                      <div>
+                        <strong class="text-white">SOLID / DRY</strong>
+                        <p class="text-white-50 mb-0">Código limpio, mantenible y desacoplado</p>
+                      </div>
+                    </div>
+                    <div class="security-item">
+                      <div class="security-item-icon"><i class="bi bi-check2-all"></i></div>
+                      <div>
+                        <strong class="text-white">Pruebas Automatizadas</strong>
+                        <p class="text-white-50 mb-0">Unit, integración y E2E en cada proyecto</p>
+                      </div>
+                    </div>
+                    <div class="security-item">
+                      <div class="security-item-icon"><i class="bi bi-robot"></i></div>
+                      <div>
+                        <strong class="text-white">CI/CD &amp; Quality Gates</strong>
+                        <p class="text-white-50 mb-0">Validaciones automáticas antes de cada despliegue</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="security-col glass-effect-dark p-4">
+                    <h6 class="security-col-title mb-3">
+                      <i class="bi bi-shield-lock me-2"></i>Estándares &amp; Cumplimiento
+                    </h6>
+                    <div class="security-item">
+                      <div class="security-item-icon security-item-icon--red"><i class="bi bi-bug"></i></div>
+                      <div>
+                        <strong class="text-white">OWASP Top 10</strong>
+                        <p class="text-white-50 mb-0">Mitigación de las vulnerabilidades más críticas</p>
+                      </div>
+                    </div>
+                    <div class="security-item">
+                      <div class="security-item-icon security-item-icon--red"><i class="bi bi-building-check"></i></div>
+                      <div>
+                        <strong class="text-white">NIST &amp; ISO/IEC 27001/27034</strong>
+                        <p class="text-white-50 mb-0">Marcos de gestión de seguridad de la información</p>
+                      </div>
+                    </div>
+                    <div class="security-item">
+                      <div class="security-item-icon security-item-icon--red"><i class="bi bi-search"></i></div>
+                      <div>
+                        <strong class="text-white">Lynis — Auditoría de sistemas</strong>
+                        <p class="text-white-50 mb-0">Escaneo de vulnerabilidades y hardening en servidores</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div class="about-card glass-effect-dark p-4 mb-4">
@@ -403,6 +492,181 @@
   justify-content: center;
   font-size: 1.5rem;
   color: white;
+}
+
+.standards-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(102, 126, 234, 0.1);
+}
+
+.standard-badge {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(102, 126, 234, 0.1);
+  border: 1px solid rgba(102, 126, 234, 0.25);
+  border-radius: 20px;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.75);
+  transition: all 0.3s ease;
+
+  i {
+    color: #667eea;
+  }
+
+  &:hover {
+    background: rgba(102, 126, 234, 0.2);
+    border-color: rgba(102, 126, 234, 0.5);
+    color: white;
+  }
+}
+
+// Security Block
+.security-block {
+  border-radius: 20px;
+  overflow: hidden;
+
+  .security-block-header {
+    border-radius: 20px;
+    border: 1px solid rgba(102, 126, 234, 0.2);
+  }
+}
+
+// CIA Triangle
+.cia-triangle {
+  border-radius: 20px;
+  border: 1px solid rgba(102, 126, 234, 0.15);
+}
+
+.cia-pillars {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  text-align: center;
+}
+
+.cia-pillar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.cia-icon {
+  width: 52px;
+  height: 52px;
+  background: rgba(102, 126, 234, 0.12);
+  border: 1px solid rgba(102, 126, 234, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  color: #667eea;
+  margin-bottom: 0.3rem;
+  transition: all 0.3s ease;
+
+  &--accent {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.3), rgba(118, 75, 162, 0.3));
+    border-color: rgba(118, 75, 162, 0.5);
+    color: #b388ff;
+    transform: scale(1.15);
+  }
+}
+
+.cia-pillar:hover .cia-icon {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border-color: transparent;
+  color: white;
+  transform: scale(1.1);
+}
+
+.cia-label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: white;
+}
+
+.cia-desc {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.45);
+  line-height: 1.3;
+}
+
+// Security two-column layout
+.security-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.security-col {
+  border-radius: 16px;
+  border: 1px solid rgba(102, 126, 234, 0.12);
+}
+
+.security-col-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  display: flex;
+  align-items: center;
+
+  i {
+    color: #667eea;
+  }
+}
+
+.security-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid rgba(102, 126, 234, 0.07);
+
+  &:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  strong {
+    font-size: 0.9rem;
+    display: block;
+    line-height: 1.3;
+  }
+
+  p {
+    font-size: 0.78rem;
+    line-height: 1.3;
+  }
+}
+
+.security-item-icon {
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  background: rgba(102, 126, 234, 0.12);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: #667eea;
+  margin-top: 0.1rem;
+
+  &--red {
+    background: rgba(220, 53, 69, 0.1);
+    color: #ff6b6b;
+  }
 }
 
 .personal-touch {

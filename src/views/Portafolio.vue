@@ -27,12 +27,13 @@
               <img src="@/assets/images/portafolio/synkro.png" class="card-img-top" alt="Synkro"/>
               <div class="card-body d-flex flex-column p-3">
                 <h5 class="fw-bold mb-3">Synkro</h5>
-                <p class="flex-grow-1">Plataforma SaaS (multicliente, multitenant) de gestión de pozos y reportes especializados de estado con gestión independiente de base de datos.</p>
+                <p class="flex-grow-1">Plataforma SaaS (multicliente, multitenant) de gestión de pozos y reportes especializados de estado con gestión independiente de base de datos por cliente.</p>
                 <div class="mt-auto">
                   <div class="features-list">
                     <span class="badge bg-primary me-1 mb-1">SaaS</span>
                     <span class="badge bg-primary me-1 mb-1">Reportes</span>
                     <span class="badge bg-primary me-1 mb-1">Ingeniería</span>
+                    <span class="badge bg-primary me-1 mb-1">Seguridad</span>
                   </div>
                 </div>
               </div>
